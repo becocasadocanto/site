@@ -32,27 +32,27 @@ export function SiteHome() {
             <div className="grid items-start gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:gap-10">
               <div className="space-y-5">
                 <div className="inline-flex items-center gap-2 border px-2 py-1 text-xs">
-                  <span className="text-muted-foreground">Rustic luxury</span>
+                  <span className="text-muted-foreground">Luxo rústico</span>
                   <span className="text-muted-foreground">•</span>
                   <span className="text-muted-foreground">Slow travel</span>
                 </div>
 
                 <h1 className="font-serif text-3xl tracking-tight text-balance sm:text-5xl">
-                  A quiet house in the hills—crafted for rest, light, and simple
-                  comfort.
+                  Uma casa tranquila nas colinas — pensada para descanso, luz e
+                  conforto simples.
                 </h1>
 
                 <p className="text-muted-foreground max-w-xl text-base text-balance sm:text-lg">
-                  Discover warm textures, stone walls, and an elegant stay with a
-                  seamless path to booking.
+                  Descubra texturas quentes, paredes de pedra e uma estadia
+                  elegante com um percurso simples até à reserva.
                 </p>
 
                 <div className="flex flex-col gap-2 sm:flex-row">
                   <Button asChild>
-                    <Link href="#booking">Check availability</Link>
+                    <Link href="#booking">Ver disponibilidade</Link>
                   </Button>
                   <Button variant="outline" asChild>
-                    <Link href="/experiences">Explore experiences</Link>
+                    <Link href="/experiences">Explorar experiências</Link>
                   </Button>
                 </div>
 
@@ -60,30 +60,30 @@ export function SiteHome() {
                   <Card className="bg-background/70">
                     <CardHeader className="gap-1">
                       <CardTitle className="font-serif text-base">
-                        Prime location
+                        Localização privilegiada
                       </CardTitle>
                       <CardDescription>
-                        Walk to viewpoints and cafés.
+                        A poucos passos de miradouros e cafés.
                       </CardDescription>
                     </CardHeader>
                   </Card>
                   <Card className="bg-background/70">
                     <CardHeader className="gap-1">
                       <CardTitle className="font-serif text-base">
-                        Thoughtful rooms
+                        Quartos cuidados
                       </CardTitle>
                       <CardDescription>
-                        Linen, wood, and soft lighting.
+                        Linho, madeira e luz suave.
                       </CardDescription>
                     </CardHeader>
                   </Card>
                   <Card className="bg-background/70">
                     <CardHeader className="gap-1">
                       <CardTitle className="font-serif text-base">
-                        Local rituals
+                        Rituais locais
                       </CardTitle>
                       <CardDescription>
-                        Tasting, trails, and calm.
+                        Provas, trilhos e tranquilidade.
                       </CardDescription>
                     </CardHeader>
                   </Card>
@@ -101,15 +101,15 @@ export function SiteHome() {
           <div className="flex items-end justify-between gap-4">
             <div className="space-y-2">
               <h2 className="font-serif text-2xl tracking-tight">
-                Experiences
+                Experiências
               </h2>
               <p className="text-muted-foreground max-w-2xl text-sm text-balance">
-                Curated moments that fit your stay: slow food, simple nature,
-                and the kind of luxury you can feel.
+                Momentos curados que completam a estadia: slow food, natureza
+                simples e o tipo de luxo que se sente.
               </p>
             </div>
             <Button variant="outline" asChild className="hidden sm:inline-flex">
-              <Link href="/experiences">View all</Link>
+              <Link href="/experiences">Ver todas</Link>
             </Button>
           </div>
 
@@ -119,7 +119,7 @@ export function SiteHome() {
 
           <div className="mt-6 sm:hidden">
             <Button variant="outline" asChild className="w-full">
-              <Link href="/experiences">View all experiences</Link>
+              <Link href="/experiences">Ver todas as experiências</Link>
             </Button>
           </div>
         </section>
@@ -129,12 +129,12 @@ export function SiteHome() {
             <div className="grid gap-6 lg:grid-cols-2 lg:items-center">
               <div className="space-y-3">
                 <h2 className="font-serif text-2xl tracking-tight">
-                  From discovery to reservation
+                  Do descobrimento à reserva
                 </h2>
                 <p className="text-muted-foreground text-sm text-balance">
-                  This mock demonstrates a clear journey: select dates, review
-                  stay details, then confirm. You can later connect payments and
-                  availability.
+                  Esta demonstração apresenta um percurso claro: selecionar
+                  datas, rever detalhes da estadia e confirmar. Mais tarde pode
+                  ligar pagamentos e disponibilidade reais.
                 </p>
               </div>
               <div>
@@ -149,10 +149,10 @@ export function SiteHome() {
             <div>Casa do Canto</div>
             <div className="flex gap-4">
               <Link className="hover:text-foreground" href="/experiences">
-                Experiences
+                Experiências
               </Link>
               <Link className="hover:text-foreground" href="/reserve">
-                Reserve
+                Reserva
               </Link>
             </div>
           </div>

@@ -56,24 +56,24 @@ export function ReserveClient() {
     <main className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
       <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-start">
         <div className="space-y-2">
-          <h1 className="font-serif text-3xl tracking-tight">Reservation</h1>
+          <h1 className="font-serif text-3xl tracking-tight">Reserva</h1>
           <p className="text-muted-foreground max-w-xl text-sm text-balance">
-            This is a mock confirmation step. The intent is a frictionless flow
-            from discovery to booking.
+            Esta é uma etapa de confirmação fictícia. O objetivo é um fluxo sem fricção,
+            do descobrimento à reserva.
           </p>
 
           <div className="flex flex-wrap items-center gap-2 pt-2">
             <Badge variant="secondary">Check-in: {checkIn || "—"}</Badge>
             <Badge variant="secondary">Check-out: {checkOut || "—"}</Badge>
-            <Badge variant="secondary">Guests: {guests}</Badge>
+            <Badge variant="secondary">Hóspedes: {guests}</Badge>
           </div>
         </div>
 
         <Card>
           <CardHeader className="gap-1">
-            <CardTitle className="font-serif text-lg">Guest details</CardTitle>
+            <CardTitle className="font-serif text-lg">Dados do hóspede</CardTitle>
             <CardDescription>
-              We’ll use this to confirm the reservation.
+              Usaremos esta informação para confirmar a reserva.
             </CardDescription>
           </CardHeader>
 
@@ -81,7 +81,7 @@ export function ReserveClient() {
             <CardContent className="space-y-4">
               <FieldGroup className="grid gap-3">
                 <Field>
-                  <FieldLabel>Full name</FieldLabel>
+                  <FieldLabel>Nome completo</FieldLabel>
                   <Input
                     value={state.name}
                     onChange={(e) =>
@@ -104,7 +104,7 @@ export function ReserveClient() {
                 </Field>
 
                 <Field>
-                  <FieldLabel>Phone</FieldLabel>
+                  <FieldLabel>Telefone</FieldLabel>
                   <Input
                     value={state.phone}
                     onChange={(e) =>
@@ -114,28 +114,28 @@ export function ReserveClient() {
                 </Field>
 
                 <Field>
-                  <FieldLabel>Notes</FieldLabel>
+                  <FieldLabel>Notas</FieldLabel>
                   <Textarea
                     value={state.notes}
                     onChange={(e) =>
                       setState((s) => ({ ...s, notes: e.target.value }))
                     }
-                    placeholder="Arrival time, special requests, etc."
+                    placeholder="Hora de chegada, pedidos especiais, etc."
                   />
                 </Field>
               </FieldGroup>
 
               <div className="bg-muted/40 border-border grid gap-2 border p-3 text-sm">
                 <div className="flex items-center justify-between">
-                  <span className="text-muted-foreground">Stay</span>
+                  <span className="text-muted-foreground">Estadia</span>
                   <span className="font-medium">Casa do Canto</span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-muted-foreground">Estimated total</span>
+                  <span className="text-muted-foreground">Total estimado</span>
                   <span className="font-medium">€—</span>
                 </div>
                 <div className="text-muted-foreground text-xs">
-                  Pricing is intentionally omitted in this mock.
+                  O valor é omitido de forma intencional nesta demonstração.
                 </div>
               </div>
             </CardContent>
@@ -146,13 +146,13 @@ export function ReserveClient() {
                 className="w-full"
                 disabled={status !== "idle"}
               >
-                {status === "idle" && "Confirm reservation"}
-                {status === "submitting" && "Confirming…"}
-                {status === "submitted" && "Request sent"}
+                {status === "idle" && "Confirmar reserva"}
+                {status === "submitting" && "A confirmar…"}
+                {status === "submitted" && "Pedido enviado"}
               </Button>
 
               <Button variant="outline" asChild className="w-full">
-                <Link href="/">Back to home</Link>
+                <Link href="/">Voltar ao início</Link>
               </Button>
             </CardFooter>
           </form>

@@ -12,7 +12,7 @@ export default function ReservePage() {
       <Suspense
         fallback={
           <main className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
-            <div className="text-muted-foreground text-sm">Loading…</div>
+            <div className="text-muted-foreground text-sm">A carregar…</div>
           </main>
         }
       >

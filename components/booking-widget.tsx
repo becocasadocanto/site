@@ -57,9 +57,9 @@ export function BookingWidget({
   return (
     <Card id={id} className="w-full">
       <CardHeader className="gap-1">
-        <CardTitle className="font-serif text-lg">Book your stay</CardTitle>
+        <CardTitle className="font-serif text-lg">Reserve a sua estadia</CardTitle>
         <CardDescription>
-          A clean, fast path from dates to confirmation.
+          Um percurso simples e rápido das datas à confirmação.
         </CardDescription>
       </CardHeader>
 
@@ -95,22 +95,22 @@ export function BookingWidget({
             </Field>
 
             <Field className={compact ? "sm:col-span-1" : "sm:col-span-2"}>
-              <FieldLabel>Guests</FieldLabel>
+              <FieldLabel>Hóspedes</FieldLabel>
               <Select
                 value={state.guests}
                 onValueChange={(v) => setState((s) => ({ ...s, guests: v }))}
               >
                 <SelectTrigger>
-                  <SelectValue placeholder="Select" />
+                  <SelectValue placeholder="Selecionar" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>
-                    <SelectItem value="1">1 guest</SelectItem>
-                    <SelectItem value="2">2 guests</SelectItem>
-                    <SelectItem value="3">3 guests</SelectItem>
-                    <SelectItem value="4">4 guests</SelectItem>
-                    <SelectItem value="5">5 guests</SelectItem>
-                    <SelectItem value="6">6 guests</SelectItem>
+                    <SelectItem value="1">1 hóspede</SelectItem>
+                    <SelectItem value="2">2 hóspedes</SelectItem>
+                    <SelectItem value="3">3 hóspedes</SelectItem>
+                    <SelectItem value="4">4 hóspedes</SelectItem>
+                    <SelectItem value="5">5 hóspedes</SelectItem>
+                    <SelectItem value="6">6 hóspedes</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
@@ -120,27 +120,27 @@ export function BookingWidget({
           <div className="bg-muted/40 border-border grid gap-3 border p-3">
             <div className="grid grid-cols-2 gap-3 text-sm">
               <div>
-                <div className="text-muted-foreground">From</div>
+                <div className="text-muted-foreground">De</div>
                 <div className="font-medium">
-                  {state.checkIn ? state.checkIn : "Select date"}
+                  {state.checkIn ? state.checkIn : "Selecionar data"}
                 </div>
               </div>
               <div>
-                <div className="text-muted-foreground">To</div>
+                <div className="text-muted-foreground">Até</div>
                 <div className="font-medium">
-                  {state.checkOut ? state.checkOut : "Select date"}
+                  {state.checkOut ? state.checkOut : "Selecionar data"}
                 </div>
               </div>
             </div>
             <div className="text-muted-foreground text-xs">
-              This is a mock booking flow—wire it to your channel manager later.
+              Este é um fluxo de reserva fictício — ligue-o ao seu channel manager mais tarde.
             </div>
           </div>
         </CardContent>
 
         <CardFooter>
           <Button type="submit" className="w-full">
-            Continue to reservation
+            Continuar para a reserva
           </Button>
         </CardFooter>
       </form>

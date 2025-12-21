@@ -62,7 +62,7 @@ export function ExperienceGrid({
             <AlertDialog>
               <AlertDialogTrigger asChild>
                 <Button variant="outline" className="flex-1">
-                  Preview
+                  Ver detalhes
                 </Button>
               </AlertDialogTrigger>
               <AlertDialogContent size="sm" className="max-w-md">
@@ -86,16 +86,16 @@ export function ExperienceGrid({
                 <p className="text-sm text-balance">{x.description}</p>
 
                 <AlertDialogFooter>
-                  <AlertDialogCancel>Close</AlertDialogCancel>
+                  <AlertDialogCancel>Fechar</AlertDialogCancel>
                   <AlertDialogAction asChild>
-                    <Link href="/reserve">Reserve your stay</Link>
+                    <Link href="/reserve">Reservar estadia</Link>
                   </AlertDialogAction>
                 </AlertDialogFooter>
               </AlertDialogContent>
             </AlertDialog>
 
             <Button asChild className="flex-1">
-              <Link href="/experiences">See all</Link>
+              <Link href="/experiences">Ver tudo</Link>
             </Button>
           </CardFooter>
         </Card>

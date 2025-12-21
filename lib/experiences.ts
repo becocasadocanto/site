@@ -10,19 +10,19 @@ export type Experience = {
 export const experiences: Experience[] = [
   {
     id: "vineyard",
-    title: "Vineyard Tasting",
+    title: "Prova na vinha",
     description:
-      "A private tasting with local producers—seasonal pairings and small-batch wines.",
-    location: "Douro Valley",
-    duration: "2–3 hours",
+      "Uma prova privada com produtores locais — harmonizações sazonais e vinhos de pequenas produções.",
+    location: "Vale do Douro",
+    duration: "2–3 horas",
     imageUrl:
       "https://images.unsplash.com/photo-1528825871115-3581a5387919?q=80&w=1800&auto=format&fit=crop",
   },
   {
     id: "hike",
-    title: "Sunrise Ridge Walk",
+    title: "Passeio ao nascer do sol",
     description:
-      "Guided walk through pine trails and viewpoints—coffee, pastries, and fresh air.",
+      "Caminhada guiada por trilhos de pinhal e miradouros — café, pastelaria e ar fresco.",
     location: "Serra",
     duration: "90 min",
     imageUrl:
@@ -30,21 +30,21 @@ export const experiences: Experience[] = [
   },
   {
     id: "cooking",
-    title: "Rustic Cooking Class",
+    title: "Oficina de cozinha rústica",
     description:
-      "Cook a comforting regional menu with herbs from the garden, then share it family-style.",
-    location: "Casa Kitchen",
-    duration: "3 hours",
+      "Cozinhe um menu regional reconfortante com ervas da horta e partilhe-o em mesa familiar.",
+    location: "Cozinha da Casa",
+    duration: "3 horas",
     imageUrl:
       "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?q=80&w=1800&auto=format&fit=crop",
   },
   {
     id: "boat",
-    title: "River Boat Evening",
+    title: "Fim de tarde no rio",
     description:
-      "Golden hour on the water—soft blankets, a small picnic, and a calm return under lights.",
-    location: "River Dock",
-    duration: "2 hours",
+      "Golden hour na água — mantas suaves, pequeno piquenique e regresso calmo sob as luzes.",
+    location: "Cais do Rio",
+    duration: "2 horas",
     imageUrl:
       "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1800&auto=format&fit=crop",
   },

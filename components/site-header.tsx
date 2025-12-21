@@ -9,16 +9,16 @@ export function SiteHeader() {
         <Link href="/" className="group flex items-baseline gap-2">
           <span className="font-serif text-lg tracking-tight">Casa do Canto</span>
           <span className="text-muted-foreground hidden text-xs sm:inline">
-            Tourist House
+            Casa de turismo
           </span>
         </Link>
 
         <nav className="flex items-center gap-2">
           <Button variant="ghost" asChild className="hidden sm:inline-flex">
-            <Link href="/experiences">Experiences</Link>
+            <Link href="/experiences">Experiências</Link>
           </Button>
           <Button asChild>
-            <Link href="/#booking">Check availability</Link>
+            <Link href="/#booking">Ver disponibilidade</Link>
           </Button>
         </nav>
       </div>

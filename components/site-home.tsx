@@ -21,8 +21,8 @@ export function SiteHome() {
         <section className="relative overflow-hidden">
           <div className="absolute inset-0">
             <img
-              src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=2400&auto=format&fit=crop"
-              alt="Stone house interior"
+              src="https://hdceo9s7rn.ufs.sh/f/omhVEzh0nq06FL9kCkiesR8KQJPMY5cu1mTIqpr3k2gGVvOhttps://hdceo9s7rn.ufs.sh/f/omhVEzh0nq06FL9kCkiesR8KQJPMY5cu1mTIqpr3k2gGVvOLL"
+              alt="jardim"
               className="h-full w-full object-cover"
             />
             <div className="from-background via-background/60 to-background absolute inset-0 bg-linear-to-b" />
